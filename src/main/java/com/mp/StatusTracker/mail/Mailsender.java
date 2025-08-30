@@ -1,4 +1,4 @@
-package com.mp.StatusTracker.controller;
+package com.mp.StatusTracker.mail;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
@@ -6,14 +6,14 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
-public class mailsender {
+public class Mailsender {
 	
 	@Autowired
     private JavaMailSender mailSender;
 	
 	public void sendMail(String servicio, String descripcion) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo("marcos.parma.sanchez@gmail.com");
+        message.setTo("tucorreo@gmail.com"); //Reemplazar por el Correo Destinatario de la Alerta
         message.setSubject("ERROR SERVICIO: " + servicio);
         message.setText("ERROR de Comunicacion en el servicio: " + servicio + " // Descripcion: " + descripcion);
         try {

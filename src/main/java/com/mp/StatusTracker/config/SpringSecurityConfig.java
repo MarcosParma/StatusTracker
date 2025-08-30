@@ -32,7 +32,6 @@ public class SpringSecurityConfig{
         return new InMemoryUserDetailsManager(user);
     }
 
-    // Para pruebas (no recomendado en producción, usar BCryptPasswordEncoder)
     @Bean
     public PasswordEncoder passwordEncoder() {
         return NoOpPasswordEncoder.getInstance();
