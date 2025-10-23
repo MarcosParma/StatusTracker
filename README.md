@@ -1,6 +1,6 @@
 # StatusTracker
 
-StatusTracker es un proyecto en **Java con Spring Boot** diseñado para monitorear servicios REST de forma automatizada.  
+StatusTracker es un proyecto en **Java v17 con Spring Boot v3.5.5** diseñado para monitorear servicios REST de forma automatizada.  
 Permite ejecutar múltiples llamadas a servicios, validar la respuesta HTTP, y enviar alertas por correo en caso de error o fallo de comunicación.
 
 ---
