@@ -16,7 +16,8 @@ public class Mailsender {
         message.setTo("tucorreo@gmail.com"); //Reemplazar por el Correo Destinatario de la Alerta
         message.setSubject("ERROR SERVICIO: " + servicio);
         message.setText("ERROR de Comunicacion en el servicio: " + servicio + " // Descripcion: " + descripcion);
-        try {
+        
+		try {
             mailSender.send(message);
             System.out.println("[OK] Mail enviado correctamente");
         } catch (Exception e) {
