@@ -8,7 +8,7 @@ Permite ejecutar múltiples llamadas a servicios, validar la respuesta HTTP, y e
 ## Características
 
 - Monitoreo programado de servicios REST mediante `@Scheduled`.
-- Soporte para llamadas GET con headers configurables.
+- Soporte para llamadas GET/POST con headers configurables.
 - Registro de errores y envío automático de correos cuando un servicio falla.
 - Configuración sencilla mediante `application.properties`.
 - Extensible: se pueden agregar nuevos servicios simplemente creando métodos en `CurlService`.
